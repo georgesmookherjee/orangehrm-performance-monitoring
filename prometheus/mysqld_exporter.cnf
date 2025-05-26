@@ -1,0 +1,5 @@
+[client]
+user=exporter
+password=exporter123
+host=hungry_franklin
+port=3306
