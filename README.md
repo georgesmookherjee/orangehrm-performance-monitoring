@@ -56,6 +56,27 @@ Accès aux interfaces :
 - Docker & Docker Compose
 - OrangeHRM instance
 
+## 🛠️ Environnement de test
+
+Application conteneurisée
+
+Les tests de performance s'exécutent sur une instance OrangeHRM déployée via Docker :
+- Application : OrangeHRM 5.7 sur http://localhost:8060
+- Base de données : MySQL 8.4.5
+- Images Docker utilisées disponibles dans /docs
+
+Configuration des tests
+
+Les paramètres de connexion sont définis dans CommonUtils.java :
+public static final String BASE_URL = "http://localhost:8060";
+public static final String ADMIN_USERNAME = "à définir pendant l'initialisation";
+public static final String ADMIN_PASSWORD = "à définir pendant l'initialisation";
+
+Prérequis pour l'exécution
+Instance OrangeHRM accessible sur le port 8060
+Compte administrateur configuré avec les identifiants ci-dessus
+Données de test : Les fichiers CSV contiennent les employés nécessaires
+
 ## 🤝 Contribution
 
 1. Fork le projet
