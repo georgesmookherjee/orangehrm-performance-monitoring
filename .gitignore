@@ -25,8 +25,8 @@ out/
 # Prometheus & Monitoring
 monitoring/data/
 monitoring/logs/
-monitoring/docker-compose.yml/
-monitoring/prometheus.yml/
+monitoring/docker-compose.yml
+monitoring/prometheus.yml
 
 # OS
 .DS_Store
@@ -44,7 +44,7 @@ Thumbs.db
 # Données Docker (à ajouter au .gitignore existant)
 data/
 docker-data/
-brouillon/
+brouillon
 
 # Docker Compose (en développement)
 docker-compose.orangehrm-mysql.yml
