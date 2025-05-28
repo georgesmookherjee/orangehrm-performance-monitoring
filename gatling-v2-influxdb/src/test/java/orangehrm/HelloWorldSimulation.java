@@ -1,4 +1,4 @@
-package io.gatling.demo;
+package orangehrm;
 
 import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;

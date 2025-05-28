@@ -1,11 +1,11 @@
-package io.gatling.demo;
+package orangehrm;
 
 import io.gatling.javaapi.core.ChainBuilder;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
-import static io.gatling.demo.CommonUtils.HEADERS_JSON;
+import static orangehrm.CommonUtils.HEADERS_JSON;
 
 /**
  * Chaînes d'actions pour le parcours 3 : Recherche et suppression d'employé par ID

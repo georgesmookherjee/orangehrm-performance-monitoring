@@ -1,11 +1,11 @@
-package io.gatling.demo;
+package orangehrm;
 
 import io.gatling.javaapi.core.ChainBuilder;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
-import static io.gatling.demo.CommonUtils.*;
+import static orangehrm.CommonUtils.*;
 
 /**
  * Chaînes d'actions communes à tous les parcours

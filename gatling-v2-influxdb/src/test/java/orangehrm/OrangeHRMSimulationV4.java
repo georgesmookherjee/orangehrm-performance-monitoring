@@ -1,4 +1,4 @@
-package io.gatling.demo;
+package orangehrm;
 
 import io.gatling.javaapi.core.FeederBuilder;
 import io.gatling.javaapi.core.ScenarioBuilder;
@@ -9,7 +9,7 @@ import java.time.Duration; // Ajout de l'import pour Duration
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
-import static io.gatling.demo.CommonUtils.BASE_URL;
+import static orangehrm.CommonUtils.BASE_URL;
 
 /**
  * Simulation de test de performance pour OrangeHRM V4

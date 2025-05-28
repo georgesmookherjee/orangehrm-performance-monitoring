@@ -1,4 +1,4 @@
-package io.gatling.demo;
+package orangehrm;
 
 import java.util.Map;
 import java.util.Random;

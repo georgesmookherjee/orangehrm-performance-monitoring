@@ -1,4 +1,4 @@
-package io.gatling.demo;
+package orangehrm;
 
 import io.gatling.javaapi.core.ChainBuilder;
 
@@ -7,7 +7,7 @@ import java.util.Random;
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
 import static io.gatling.javaapi.http.HttpDsl.status;
-import static io.gatling.demo.CommonUtils.HEADERS_JSON;
+import static orangehrm.CommonUtils.HEADERS_JSON;
 
 /**
  * Chaînes d'actions pour le parcours 2 : Ajout d'un employé et détails personnels
