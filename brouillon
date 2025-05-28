@@ -1,0 +1,29 @@
+docker-compose -f docker-compose-monitoring-distant.yml up -d
+
+Ok super. Il y a un autre détail qui m'échappe. à la ligne 24/25 du fichier docker-compose-monitoring-distant.yml, il y a une déclaration du dossier pour persister les données du conteneur 'pormetheus-distant'. C'est bien ça ?ModifierNon, en fait il n'y a pas de déclaration pour persister les données à la ligne 24/25 !
+Ce que tu vois aux lignes 24/25, c'est :
+yamlvolumes:
+  - ./prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro
+Ceci monte uniquement le fichier de configuration en lecture seule (ro) dans le conteneur. Ce n'est pas pour persister les données.
+Pour persister les données de Prometheus, il faudrait ajouter :
+yamlvolumes:
+  - ./prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro
+  - ./prometheus-data:/prometheus  # ← Cette ligne manque pour persister les données
+Actuellement :
+
+✅ Configuration Prometheus montée depuis le host
+❌ Aucune persistance des données (métriques, alertes, etc.)
+
+Conséquences :
+Quand tu redémarres le conteneur prometheus-distant, tu perds :
+
+Toutes les métriques collectées
+L'historique des données
+Les règles d'alerting personnalisées
+
+Si tu veux persister les données :
+yamlvolumes:
+  - ./prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro
+  - ./data:/prometheus  # Dossier local pour stocker les données
+Et il faudrait créer le dossier ./data/ et l'ajouter au .gitignore.
+Veux-tu que je t'aide à ajouter la persistance des données ? 🤔

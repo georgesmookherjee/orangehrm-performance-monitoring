@@ -28,6 +28,19 @@ services:
     depends_on:
       - mysql-exporter-distant
 
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana-monitoring
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+    networks:
+      - monitoring-network
+    depends_on:
+      - prometheus-distant
+
 networks:
   monitoring-network:
     external: true

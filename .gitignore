@@ -23,11 +23,10 @@ out/
 **/logback.xml
 
 # Prometheus & Monitoring
-prometheus/data/
-prometheus/logs/
-grafana/data/
-prometheus/docker-compose.yml/
-prometheus/prometheus.yml/
+monitoring/data/
+monitoring/logs/
+monitoring/docker-compose.yml/
+monitoring/prometheus.yml/
 
 # OS
 .DS_Store
