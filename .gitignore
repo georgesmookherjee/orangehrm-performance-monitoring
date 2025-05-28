@@ -49,5 +49,8 @@ brouillon
 # Docker Compose (en développement)
 docker-compose.orangehrm-mysql.yml
 
+# autres
+old/
+
 # Test data (décommenter si tu ne veux pas versionner les gros CSV)
 # **/*.csv
