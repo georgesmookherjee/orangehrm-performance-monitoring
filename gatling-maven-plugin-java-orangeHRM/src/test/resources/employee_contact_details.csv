@@ -1,0 +1,100 @@
+street,city,state,zipCode,country,mobile,workEmail
+123 Admin St,Admin City,Admin State,10001,AF,1234567890,admin@example.com
+45 Rue de Paris,Paris,Île-de-France,75001,US,3399887766,alice.duval@example.com
+50 rue bouret,paris,Île-de-France,75001,FR,663942386,georges@gmail.com
+123 Main St,New York,NY,10001,AF,755512347777,john.smith@example.com
+456 Tech Blvd,Los Angeles,CA,90001,US,3105557890,sarah.connor@example.com
+789 Oak Dr,Chicago,IL,60601,FR,7735559876,mike.johnson@example.com
+321 Pine St,Boston,MA,02101,AF,6175551234,emily.davis@example.com
+654 Maple Ave,Seattle,WA,98101,US,2065557890,david.wilson@example.com
+987 Cedar Rd,Miami,FL,33101,FR,3055551234,jennifer.brown@example.com
+147 Birch Ln,Denver,CO,80201,FR,7205557890,robert.taylor@example.com
+123 Oak Avenue,Boston,MA,02108,US,6175551234,robert.smith@example.com
+456 Pine Street,Chicago,IL,60601,US,3125559876,jennifer.johnson@example.com
+789 Maple Drive,San Francisco,CA,94105,US,4155553456,michael.brown@example.com
+101 Sunset Blvd,Los Angeles,CA,90001,US,2135557890,sarah.davis@example.com
+25 Broadway,New York,NY,10004,US,2125551234,james.wilson@example.com
+73 Rue du Faubourg,Paris,Île-de-France,75008,FR,33123456789,pierre.dubois@example.com
+15 Oxford Street,London,Greater London,EC1A,GB,44207123456,elizabeth.taylor@example.com
+8 Piazza Navona,Rome,Lazio,00186,IT,3934567890,marco.rossi@example.com
+42 Calle Mayor,Madrid,Community of Madrid,28013,ES,3491234567,maria.garcia@example.com
+17 Friedrichstraße,Berlin,Berlin,10117,DE,4930123456,hans.mueller@example.com
+5 Königsallee,Düsseldorf,North Rhine-Westphalia,40212,DE,492112345678,klaus.schmidt@example.com
+10 Avenue Montaigne,Paris,Île-de-France,75008,FR,33145123456,sophie.martin@example.com
+22 Via Montenapoleone,Milan,Lombardy,20121,IT,3902123456,giuseppe.bianchi@example.com
+35 Passeig de Gràcia,Barcelona,Catalonia,08007,ES,3493123456,carmen.lopez@example.com
+47 Regent Street,London,Greater London,W1B,GB,44208123456,william.jones@example.com
+9 Ginza,Tokyo,Tokyo,104-0061,JP,81312345678,haruki.tanaka@example.com
+14 Myeongdong,Seoul,Seoul,04538,KR,8221234567,ji-woo.kim@example.com
+28 Nanjing Road,Shanghai,Shanghai,200001,CN,8621123456,li.zhang@example.com
+63 Orchard Road,Singapore,Central Region,238839,SG,6561234567,mei.tan@example.com
+7 Queen Street,Sydney,New South Wales,2000,AU,61291234567,david.johnson@example.com
+18 Collins Street,Melbourne,Victoria,3000,AU,61391234567,emma.smith@example.com
+31 Bahnhofstrasse,Zurich,Zurich,8001,CH,41431234567,thomas.mueller@example.com
+16 Rue du Rhône,Geneva,Geneva,1204,CH,41221234567,laura.dubois@example.com
+52 Gran Vía,Madrid,Community of Madrid,28013,ES,3490123456,javier.rodriguez@example.com
+29 Karl Johans gate,Oslo,Oslo,0154,NO,4722123456,erik.olsen@example.com
+11 Strøget,Copenhagen,Capital Region,1160,DK,4533123456,anders.nielsen@example.com
+20 Kurfürstendamm,Berlin,Berlin,10719,DE,4930234567,sabine.weber@example.com
+45 Champs-Élysées,Paris,Île-de-France,75008,FR,33144123456,nicolas.petit@example.com
+33 Fifth Avenue,New York,NY,10003,US,2123455678,rebecca.clark@example.com
+68 Mariahilfer Straße,Vienna,Vienna,1060,AT,4315123456,paul.wagner@example.com
+24 Istiklal Avenue,Istanbul,Istanbul,34435,TR,9021123456,mehmet.yilmaz@example.com
+39 Tverskaya Street,Moscow,Moscow,125009,RU,74951234567,ivan.petrov@example.com
+57 Arbat Street,Moscow,Moscow,119002,RU,74952345678,natalia.smirnova@example.com
+86 Nevsky Prospect,Saint Petersburg,Saint Petersburg,191025,RU,78121234567,alexei.ivanov@example.com
+12 Rua Augusta,Lisbon,Lisbon,1100-053,PT,35121234567,joão.silva@example.com
+77 Avenue des Champs-Élysées,Paris,Île-de-France,75008,FR,33146987654,claire.moreau@example.com
+81 Via dei Condotti,Rome,Lazio,00187,IT,3906123456,alessandro.conti@example.com
+94 Kungsgatan,Stockholm,Stockholm,111 22,SE,4687654321,erik.andersson@example.com
+102 Rue Neuve,Brussels,Brussels,1000,BE,3225123456,luc.vandenberg@example.com
+37 Grafton Street,Dublin,Dublin,D02 XF72,IE,35318765432,sean.murphy@example.com
+59 Corso Buenos Aires,Milan,Lombardy,20124,IT,3902765432,lucia.ferrari@example.com
+26 Serrano,Madrid,Community of Madrid,28001,ES,3491765432,miguel.hernandez@example.com
+43 Bahnhofstrasse,Zurich,Zurich,8001,CH,41447654321,markus.keller@example.com
+71 Corso Vittorio Emanuele II,Milan,Lombardy,20122,IT,3902987654,elisa.moretti@example.com
+88 Andrássy út,Budapest,Budapest,1062,HU,3613456789,istván.nagy@example.com
+64 Nowy Świat,Warsaw,Masovian,00-001,PL,48221234567,anna.kowalska@example.com
+91 Váci utca,Budapest,Budapest,1052,HU,3617654321,viktoria.kiss@example.com
+105 Kärtnerstraße,Vienna,Vienna,1010,AT,4315678901,dieter.hoffmann@example.com
+13 Ermou Street,Athens,Attica,105 63,GR,3021012345,andreas.papadopoulos@example.com
+27 Paseo de la Castellana,Madrid,Community of Madrid,28046,ES,3491345678,elena.fernandez@example.com
+36 Stiklal Avenue,Istanbul,Istanbul,34435,TR,9021234567,ayşe.demir@example.com
+50 Königsallee,Düsseldorf,North Rhine-Westphalia,40212,DE,492117654321,stefan.schneider@example.com
+62 Avenue Montaigne,Paris,Île-de-France,75008,FR,33147654321,amélie.leroy@example.com
+75 Via Montenapoleone,Milan,Lombardy,20121,IT,3902876543,daniela.ricci@example.com
+83 Passeig de Gràcia,Barcelona,Catalonia,08008,ES,3493876543,carlos.martinez@example.com
+96 Regent Street,London,Greater London,W1B,GB,44209876543,olivia.wilson@example.com
+108 Ginza,Tokyo,Tokyo,104-0061,JP,81313456789,takashi.yamamoto@example.com
+19 Myeongdong,Seoul,Seoul,04538,KR,8223456789,min-jae.park@example.com
+32 Nanjing Road,Shanghai,Shanghai,200001,CN,8621987654,wei.liu@example.com
+46 Orchard Road,Singapore,Central Region,238839,SG,6563456789,benjamin.lim@example.com
+58 Queen Street,Sydney,New South Wales,2000,AU,61293456789,samantha.andrews@example.com
+70 Collins Street,Melbourne,Victoria,3000,AU,61393456789,ethan.morris@example.com
+84 Bahnhofstrasse,Zurich,Zurich,8001,CH,41433456789,julia.gerber@example.com
+97 Rue du Rhône,Geneva,Geneva,1204,CH,41223456789,antoine.bernard@example.com
+110 Gran Vía,Madrid,Community of Madrid,28013,ES,3490987654,cristina.gomez@example.com
+23 Karl Johans gate,Oslo,Oslo,0154,NO,4723456789,magnus.hansen@example.com
+48 Strøget,Copenhagen,Capital Region,1160,DK,4534567890,sofia.christiansen@example.com
+60 Kurfürstendamm,Berlin,Berlin,10719,DE,4930876543,lukas.becker@example.com
+72 Champs-Élysées,Paris,Île-de-France,75008,FR,33148765432,juliette.roux@example.com
+85 Fifth Avenue,New York,NY,10003,US,2128765432,tyler.adams@example.com
+99 Mariahilfer Straße,Vienna,Vienna,1060,AT,4316543210,nicole.huber@example.com
+111 Istiklal Avenue,Istanbul,Istanbul,34435,TR,9023456789,kemal.yildiz@example.com
+40 Tverskaya Street,Moscow,Moscow,125009,RU,74953456789,mikhail.sokolov@example.com
+53 Arbat Street,Moscow,Moscow,119002,RU,74954567890,ekaterina.kozlova@example.com
+66 Nevsky Prospect,Saint Petersburg,Saint Petersburg,191025,RU,78123456789,dmitri.smirnov@example.com
+79 Rua Augusta,Lisbon,Lisbon,1100-053,PT,35123456789,ana.santos@example.com
+92 Avenue Louise,Brussels,Brussels,1050,BE,3226543210,valerie.janssens@example.com
+104 O'Connell Street,Dublin,Dublin,D01 F5P2,IE,35317654321,niall.kelly@example.com
+117 Bogstadveien,Oslo,Oslo,0366,NO,4725678901,ingrid.larsen@example.com
+30 Ströget,Copenhagen,Capital Region,1457,DK,4536789012,christian.jensen@example.com
+44 Portobello Road,London,Greater London,W11,GB,44201234567,charlotte.thompson@example.com
+57 Boulevard Saint-Germain,Paris,Île-de-France,75005,FR,33149876543,alexandre.laurent@example.com
+69 Via del Corso,Rome,Lazio,00186,IT,3906543210,francesca.russo@example.com
+82 Puerta del Sol,Madrid,Community of Madrid,28013,ES,3492765432,pablo.sanchez@example.com
+95 Vaci Street,Budapest,Budapest,1052,HU,3619876543,zsofia.kovacs@example.com
+107 Floriańska,Krakow,Lesser Poland,31-019,PL,48123456789,marta.nowak@example.com
+120 Laugavegur,Reykjavik,Capital Region,101,IS,3545678901,gunnar.jonsson@example.com
+34 Mannerheimintie,Helsinki,Uusimaa,00100,FI,3589876543,laura.virtanen@example.com
+49 Drottninggatan,Stockholm,Stockholm,111 21,SE,4689876543,karl.gustafsson@example.com
