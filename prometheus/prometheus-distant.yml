@@ -1,0 +1,25 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'orangehrm-distant-monitor'
+
+scrape_configs:
+  # Monitoring de Prometheus lui-même
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scrape_interval: 30s
+    metrics_path: /metrics
+
+  # Monitoring MySQL via l'exporter distant
+  - job_name: 'mysql-distant'
+    static_configs:
+      - targets: ['mysql-exporter-distant:9104']
+        labels:
+          environment: 'test'
+          service: 'orangehrm-database'
+          location: 'distant'
+    scrape_interval: 15s
+    metrics_path: /metrics
+    scrape_timeout: 10s
