@@ -26,8 +26,8 @@ out/
 prometheus/data/
 prometheus/logs/
 grafana/data/
-prometheus/docker-compose.yml
-prometheus/prometheus.yml
+prometheus/docker-compose.yml/
+prometheus/prometheus.yml/
 
 # OS
 .DS_Store
@@ -45,7 +45,7 @@ Thumbs.db
 # Données Docker (à ajouter au .gitignore existant)
 data/
 docker-data/
-brouillon
+brouillon/
 
 # Docker Compose (en développement)
 docker-compose.orangehrm-mysql.yml
