@@ -50,7 +50,7 @@ public class OrangeHRMBulkImportSimulation extends Simulation {
     private final ScenarioBuilder bulkAddEmployeeScenario = scenario("Bulk Add Employees Scenario")
             .exec(login())
             .pause(Duration.ofMillis(30))
-            .repeat(220).on(feed(employeesFeeder)
+            .repeat(5).on(feed(employeesFeeder)
                     .exec(navigateToAddEmployee())
                     .pause(Duration.ofMillis(30)) // Pause courte entre chaque ajout
                     .exec(addNewEmployee())

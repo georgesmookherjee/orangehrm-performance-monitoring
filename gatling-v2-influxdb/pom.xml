@@ -95,7 +95,7 @@
                 <version>${gatling-maven-plugin.version}</version>
                 <configuration>
                     <!-- Configuration simple -->
-                    <simulationClass>orangehrm.OrangeHRMSimulationV4</simulationClass>
+                    <simulationClass>orangehrm.OrangeHRMBulkImportSimulation</simulationClass>
                 </configuration>
             </plugin>
         </plugins>
