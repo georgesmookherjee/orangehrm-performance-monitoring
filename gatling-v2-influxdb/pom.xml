@@ -61,7 +61,7 @@
         <testSourceDirectory>src/test/java</testSourceDirectory>
         <testResources>
             <testResource>
-                <directory>src/test/resources</directory>
+                <directory>src/test/ressources</directory>
             </testResource>
         </testResources>
 
@@ -95,7 +95,7 @@
                 <version>${gatling-maven-plugin.version}</version>
                 <configuration>
                     <!-- Configuration simple -->
-                    <simulationClass>OrangeHRMSimulationV4</simulationClass>
+                    <simulationClass>orangehrm.OrangeHRMSimulationV4</simulationClass>
                 </configuration>
             </plugin>
         </plugins>
