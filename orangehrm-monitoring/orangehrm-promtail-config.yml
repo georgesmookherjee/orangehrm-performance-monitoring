@@ -1,0 +1,83 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://orangehrm-loki:3100/loki/api/v1/push
+
+scrape_configs:
+  # Logs du container OrangeHRM
+  - job_name: orangehrm-container
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+        refresh_interval: 5s
+        filters:
+          - name: name
+            values: ["kind_ardinghelli"]
+    relabel_configs:
+      - source_labels: ['__meta_docker_container_name']
+        target_label: 'container'
+      - source_labels: ['__meta_docker_container_log_stream']
+        target_label: 'stream'
+    pipeline_stages:
+      # Parser les logs JSON Docker
+      - json:
+          expressions:
+            timestamp: time
+            message: log
+            stream: stream
+
+      # Parser les logs Apache (format combiné)
+      - regex:
+          expression: '^(?P<remote_addr>\S+) \S+ \S+ \[(?P<time_local>[^\]]+)\] "(?P<method>\S+) (?P<request>\S+) (?P<protocol>\S+)" (?P<status>\d+) (?P<body_bytes_sent>\d+) "(?P<http_referer>[^"]*)" "(?P<http_user_agent>[^"]*)"'
+          source: message
+
+      # Parser les erreurs PHP
+      - regex:
+          expression: '\[(?P<timestamp>[^\]]+)\] (?P<level>\w+): (?P<php_message>.*)'
+          source: message
+
+      # Extraire des métriques depuis les logs
+      - metrics:
+          # Compteur de requêtes HTTP
+          apache_requests_total:
+            type: Counter
+            description: "Total HTTP requests"
+            source: method
+            config:
+              action: inc
+
+          # Histogram des temps de réponse (si disponible dans les logs)
+          apache_request_duration:
+            type: Histogram
+            description: "HTTP request duration"
+            source: request_time
+            config:
+              buckets: [0.1, 0.5, 1, 2, 5, 10, 30]
+
+          # Compteur d'erreurs PHP
+          php_errors_total:
+            type: Counter
+            description: "PHP errors by level"
+            source: level
+            config:
+              action: inc
+
+      # Labels dynamiques
+      - labels:
+          method:
+          status:
+          level:
+          container: orangehrm
+
+  # Logs système (optionnel)
+  - job_name: system-logs
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: system
+          __path__: /var/log/*.log

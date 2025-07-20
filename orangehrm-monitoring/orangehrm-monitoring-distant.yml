@@ -65,6 +65,50 @@ services:
     environment:
       - NODE_EXPORTER_DISABLE_COLLECTORS="arp,bcache,bonding,conntrack,edac,entropy,filefd,hwmon,infiniband,ipvs,mdadm,netclass,netstat,nfs,nfsd,sockstat,textfile,time,timex,vmstat,xfs,zfs"
 
+  # Loki - Stockage des logs
+  orangehrm-loki:
+    image: grafana/loki:2.9.0
+    container_name: orangehrm-loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./orangehrm-loki-config.yml:/etc/loki/local-config.yaml:ro
+      - loki_data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - orangehrm-monitoring-network
+
+  # Promtail - Collecteur de logs
+  orangehrm-promtail:
+    image: grafana/promtail:2.9.0
+    container_name: orangehrm-promtail
+    restart: unless-stopped
+    volumes:
+      - ./orangehrm-promtail-config.yml:/etc/promtail/config.yml:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/log:/var/log:ro
+    command: -config.file=/etc/promtail/config.yml
+    networks:
+      - orangehrm-monitoring-network
+    depends_on:
+      - orangehrm-loki
+
+  # Blackbox Exporter - Tests externes
+  orangehrm-blackbox-exporter:
+    image: prom/blackbox-exporter:latest
+    container_name: orangehrm-blackbox-exporter
+    restart: unless-stopped
+    ports:
+      - "9115:9115"
+    volumes:
+      - ./orangehrm-blackbox-config.yml:/etc/blackbox_exporter/config.yml:ro
+    networks:
+      - orangehrm-monitoring-network
+
 networks:
   orangehrm-monitoring-network:
     external: true
+
+volumes:
+  loki_data:
