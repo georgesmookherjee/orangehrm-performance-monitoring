@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  mysql-exporter-distant:
+  orangehrm-mysql-exporter-distant:
     image: prom/mysqld-exporter:latest
     container_name: orangehrm-mysql-exporter-distant
     restart: unless-stopped
@@ -15,20 +15,20 @@ services:
     networks:
       - orangehrm-monitoring-network
 
-  prometheus-distant:
+  orangehrm-prometheus-distant:
     image: prom/prometheus:latest
     container_name: orangehrm-prometheus-distant
     restart: unless-stopped
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro
+      - ./orangehrm-prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro
     networks:
       - orangehrm-monitoring-network
     depends_on:
-      - mysql-exporter-distant
+      - orangehrm-mysql-exporter-distant
 
-  grafana:
+  orangehrm-grafana-monitoring:
     image: grafana/grafana:latest
     container_name: orangehrm-grafana-monitoring
     restart: unless-stopped
@@ -39,7 +39,7 @@ services:
     networks:
       - orangehrm-monitoring-network
     depends_on:
-      - prometheus-distant
+      - orangehrm-prometheus-distant
 
 networks:
   orangehrm-monitoring-network:

@@ -6,14 +6,14 @@ global:
 
 scrape_configs:
   # Monitoring de Prometheus lui-même
-  - job_name: 'prometheus'
+  - job_name: 'orangehrm-prometheus'
     static_configs:
       - targets: ['localhost:9090']
     scrape_interval: 30s
     metrics_path: /metrics
 
   # Monitoring MySQL via l'exporter distant
-  - job_name: 'mysql-distant'
+  - job_name: 'orangehrm-mysql-distant'
     static_configs:
       - targets: ['orangehrm-mysql-exporter-distant:9104']
         labels:
@@ -25,7 +25,7 @@ scrape_configs:
     scrape_timeout: 10s
 
   # Monitoring InfluxDB pour Gatling
-  - job_name: 'influxdb-gatling'
+  - job_name: 'orangehrm-influxdb-gatling'
     static_configs:
       - targets: [ 'orangehrm-gatling-influxdb:8086' ]  # ✅ Nom cohérent
         labels:
