@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mysql-exporter-distant:
     image: prom/mysqld-exporter:latest
-    container_name: mysql-exporter-distant
+    container_name: orangehrm-mysql-exporter-distant
     restart: unless-stopped
     ports:
       - "9104:9104"
@@ -13,34 +13,34 @@ services:
     environment:
       - MYSQLD_EXPORTER_PASSWORD=exporter123
     networks:
-      - monitoring-network
+      - orangehrm-monitoring-network
 
   prometheus-distant:
     image: prom/prometheus:latest
-    container_name: prometheus-distant
+    container_name: orangehrm-prometheus-distant
     restart: unless-stopped
     ports:
       - "9090:9090"
     volumes:
       - ./prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro
     networks:
-      - monitoring-network
+      - orangehrm-monitoring-network
     depends_on:
       - mysql-exporter-distant
 
   grafana:
     image: grafana/grafana:latest
-    container_name: grafana-monitoring
+    container_name: orangehrm-grafana-monitoring
     restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin123
     networks:
-      - monitoring-network
+      - orangehrm-monitoring-network
     depends_on:
       - prometheus-distant
 
 networks:
-  monitoring-network:
+  orangehrm-monitoring-network:
     external: true

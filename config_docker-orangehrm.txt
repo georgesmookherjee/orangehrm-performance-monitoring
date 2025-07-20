@@ -1,0 +1,1651 @@
+C:\Users\geo_m>docker inspect kind_ardinghelli hungry_franklin monitoring-network gatling-influxdb mysql-exporter-distant prometheus-distant grafana-monitoring
+[
+    {
+        "Id": "b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6",
+        "Created": "2025-04-19T20:23:05.383970789Z",
+        "Path": "docker-php-entrypoint",
+        "Args": [
+            "apache2-foreground"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2094,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-05-30T06:35:13.918860481Z",
+            "FinishedAt": "2025-05-28T16:03:14.599232302Z"
+        },
+        "Image": "sha256:a2f811f926b6267f693185a8a59622da38044c0d2d4b22a43f5693dffe3eb29f",
+        "ResolvConfPath": "/var/lib/docker/containers/b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6/hostname",
+        "HostsPath": "/var/lib/docker/containers/b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6/hosts",
+        "LogPath": "/var/lib/docker/containers/b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6/b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6-json.log",
+        "Name": "/kind_ardinghelli",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8060"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "7885a7efe2ee0529cd9d3c3ced7ab956249e4307570b3ba09c6734ab7b8cc237",
+                "Source": "/var/lib/docker/volumes/7885a7efe2ee0529cd9d3c3ced7ab956249e4307570b3ba09c6734ab7b8cc237/_data",
+                "Destination": "/var/www/html",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "b96a0e5ca115",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA",
+                "PHP_VERSION=8.3.9",
+                "PHP_URL=https://www.php.net/distributions/php-8.3.9.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.3.9.tar.xz.asc",
+                "PHP_SHA256=bf4d7b8ea60a356064f88485278bd6f941a230ec16f0fc401574ce1445ad6c77",
+                "OHRM_VERSION=5.7",
+                "OHRM_MD5=5bd924a546e29e06c34eec73b014d139"
+            ],
+            "Cmd": [
+                "apache2-foreground"
+            ],
+            "Image": "orangehrm/orangehrm:latest",
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "Entrypoint": [
+                "docker-php-entrypoint"
+            ],
+            "OnBuild": null,
+            "Labels": {},
+            "StopSignal": "SIGWINCH"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "71966160d1d876371cb5cad7c4adb1165b39585cb1e90e4f95e012189dea9230",
+            "SandboxKey": "/var/run/docker/netns/71966160d1d8",
+            "Ports": {
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8060"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "a04a521c54a2709d55359508542bcd537e5674e2d1196f3da3f6e71f61705dfa",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "de:2c:90:0f:bb:6d",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "de:2c:90:0f:bb:6d",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "64de0a19b65a3f8bcdda2b17804d0385b89b0777be9bcfbc7f6b83978226f0bb",
+                    "EndpointID": "a04a521c54a2709d55359508542bcd537e5674e2d1196f3da3f6e71f61705dfa",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                },
+                "monitoring-network": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [],
+                    "MacAddress": "8e:74:c4:e9:0d:d9",
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+                    "EndpointID": "2e10af587e1d03ad087c783df23557dbd5c268b494fa421c80a08b38acdf8e80",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "kind_ardinghelli",
+                        "b96a0e5ca115"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:a2f811f926b6267f693185a8a59622da38044c0d2d4b22a43f5693dffe3eb29f",
+            "size": 3664,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e",
+        "Created": "2025-04-19T20:17:00.060107277Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1945,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-05-30T06:35:12.956280113Z",
+            "FinishedAt": "2025-05-28T16:03:16.842216012Z"
+        },
+        "Image": "sha256:3a89257a3a979e46e3650628bea227a6bc318a2bdc95f954489ec89573a4c6a2",
+        "ResolvConfPath": "/var/lib/docker/containers/f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e/hostname",
+        "HostsPath": "/var/lib/docker/containers/f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e/hosts",
+        "LogPath": "/var/lib/docker/containers/f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e/f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e-json.log",
+        "Name": "/hungry_franklin",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "d28c95c1eb17dbb939809ba5529e124fa033dce4deef32ce58d4961b68be2248",
+                "Source": "/var/lib/docker/volumes/d28c95c1eb17dbb939809ba5529e124fa033dce4deef32ce58d4961b68be2248/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "f6845d3af573",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_ROOT_PASSWORD=Test$2025",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.17",
+                "MYSQL_MAJOR=8.4",
+                "MYSQL_VERSION=8.4.5-1.el9",
+                "MYSQL_SHELL_VERSION=8.4.5-1.el9"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "mysql:8.4.5",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "f87f3015471ccc31c53aaa9776d52d16cbdd909115aca835b2d77ef8a1719506",
+            "SandboxKey": "/var/run/docker/netns/f87f3015471c",
+            "Ports": {
+                "3306/tcp": null,
+                "33060/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "95dc4f2af7a26558bd5156c1fc5b02df622501156ce0329de1ca72e77bd23a6c",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "3e:5d:46:2e:41:c3",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "3e:5d:46:2e:41:c3",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "64de0a19b65a3f8bcdda2b17804d0385b89b0777be9bcfbc7f6b83978226f0bb",
+                    "EndpointID": "95dc4f2af7a26558bd5156c1fc5b02df622501156ce0329de1ca72e77bd23a6c",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                },
+                "monitoring-network": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [],
+                    "MacAddress": "12:f4:b3:cc:98:0c",
+                    "DriverOpts": {},
+                    "GwPriority": 0,
+                    "NetworkID": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+                    "EndpointID": "56b80789a57ccf0dd58ed6ee4e5ac845d57449da24905778a5ba1ae561b782f5",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "hungry_franklin",
+                        "f6845d3af573"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:dc6acfdfcf111858d8ec72daa23308a54377dc458d10ba4dd9484de2ea3cbc46",
+            "size": 2856,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:bd35ace53fc9380aae75ba4193843964e13f1611337a62134b32fa09f857f35d",
+                "org.opencontainers.image.base.name": "oraclelinux:9-slim",
+                "org.opencontainers.image.created": "2025-04-15T21:51:35Z",
+                "org.opencontainers.image.revision": "8ade9b2c9a32a79fbaa44b564d09a40744f1d105",
+                "org.opencontainers.image.source": "https://github.com/docker-library/mysql.git#8ade9b2c9a32a79fbaa44b564d09a40744f1d105:8.4",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/mysql",
+                "org.opencontainers.image.version": "8.4.5"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Name": "monitoring-network",
+        "Id": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+        "Created": "2025-05-18T16:17:36.85394664Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.19.0.0/16",
+                    "Gateway": "172.19.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b": {
+                "Name": "gatling-influxdb",
+                "EndpointID": "bee28255fa2e991d34b43a7b193e50a7ba2dca3c9d19fa8ed4a793d0ad96f47c",
+                "MacAddress": "5a:39:f8:3f:4c:0a",
+                "IPv4Address": "172.19.0.4/16",
+                "IPv6Address": ""
+            },
+            "9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98": {
+                "Name": "mysql-exporter-distant",
+                "EndpointID": "01421c0eb93bea9f5d570d52870833aba361f5fca8cfb0505e46d00c7a43f1b1",
+                "MacAddress": "aa:2e:db:af:79:5a",
+                "IPv4Address": "172.19.0.5/16",
+                "IPv6Address": ""
+            },
+            "b96a0e5ca1157b2de0f4cf840fb0987e3b5670ec7b1ddd38f91b1b9b8e4a7ec6": {
+                "Name": "kind_ardinghelli",
+                "EndpointID": "2e10af587e1d03ad087c783df23557dbd5c268b494fa421c80a08b38acdf8e80",
+                "MacAddress": "8e:74:c4:e9:0d:d9",
+                "IPv4Address": "172.19.0.3/16",
+                "IPv6Address": ""
+            },
+            "d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6": {
+                "Name": "prometheus-distant",
+                "EndpointID": "bfbffa8b711007445c7766fbd01a7fb879a430cc0955b5ccfd784cef781f240f",
+                "MacAddress": "06:c7:f5:83:74:32",
+                "IPv4Address": "172.19.0.6/16",
+                "IPv6Address": ""
+            },
+            "edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad": {
+                "Name": "grafana-monitoring",
+                "EndpointID": "f2d067a99d75e0b74521cf021d595d5c92474c6ab528cc27072d1fd36d5ebc57",
+                "MacAddress": "c6:3a:7a:e5:15:0b",
+                "IPv4Address": "172.19.0.7/16",
+                "IPv6Address": ""
+            },
+            "f6845d3af573f1753b1c60d319552534875951d4a95d95f0166c4cff2463dd0e": {
+                "Name": "hungry_franklin",
+                "EndpointID": "56b80789a57ccf0dd58ed6ee4e5ac845d57449da24905778a5ba1ae561b782f5",
+                "MacAddress": "12:f4:b3:cc:98:0c",
+                "IPv4Address": "172.19.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.enable_ipv4": "true",
+            "com.docker.network.enable_ipv6": "false"
+        },
+        "Labels": {}
+    },
+    {
+        "Id": "6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b",
+        "Created": "2025-05-30T07:55:13.535494842Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "influxd"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 11088,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-05-30T08:02:45.216365502Z",
+            "FinishedAt": "2025-05-30T08:02:45.171971359Z"
+        },
+        "Image": "sha256:2601e27d6b7eac276017d7ea48d2685d52639cea974744b5877924376283a4cd",
+        "ResolvConfPath": "/var/lib/docker/containers/6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b/hostname",
+        "HostsPath": "/var/lib/docker/containers/6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b/hosts",
+        "LogPath": "/var/lib/docker/containers/6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b/6103bf3128bec8fc777577ca98c4d91c43b1a9c209c1866ed29ae085ef4b021b-json.log",
+        "Name": "/gatling-influxdb",
+        "RestartCount": 14,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "monitoring_influxdb_data:/var/lib/influxdb:rw",
+                "/run/desktop/mnt/host/d/IT/gatling/OrangeHRM/gatling-v2-influxdb/influxdb.conf:/etc/influxdb/influxdb.conf:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "monitoring-network",
+            "PortBindings": {
+                "2003/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "2003"
+                    }
+                ],
+                "8086/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8086"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "monitoring_influxdb_data",
+                "Source": "/var/lib/docker/volumes/monitoring_influxdb_data/_data",
+                "Destination": "/var/lib/influxdb",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/run/desktop/mnt/host/d/IT/gatling/OrangeHRM/gatling-v2-influxdb/influxdb.conf",
+                "Destination": "/etc/influxdb/influxdb.conf",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "6103bf3128be",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "2003/tcp": {},
+                "8086/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INFLUXDB_DB=gatling",
+                "INFLUXDB_USER=gatling",
+                "INFLUXDB_USER_PASSWORD=gatling123",
+                "INFLUXDB_ADMIN_USER=admin",
+                "INFLUXDB_ADMIN_PASSWORD=admin123",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "INFLUXDB_VERSION=1.8.10"
+            ],
+            "Cmd": [
+                "influxd"
+            ],
+            "Image": "influxdb:1.8-alpine",
+            "Volumes": {
+                "/var/lib/influxdb": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "05a84820ba2d060f33b084711539e63da288c3609adaf9efc654bff27d1ca382",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:2601e27d6b7eac276017d7ea48d2685d52639cea974744b5877924376283a4cd",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "monitoring",
+                "com.docker.compose.project.config_files": "D:\\IT\\gatling\\OrangeHRM\\monitoring\\docker-compose-influxdb.yml",
+                "com.docker.compose.project.working_dir": "D:\\IT\\gatling\\OrangeHRM\\monitoring",
+                "com.docker.compose.service": "influxdb",
+                "com.docker.compose.version": "2.35.1"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "1da20af5ff06727c418281321364c3ee13e0f64c492690c021d4f93ce68d11eb",
+            "SandboxKey": "/var/run/docker/netns/1da20af5ff06",
+            "Ports": {
+                "2003/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "2003"
+                    }
+                ],
+                "8086/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8086"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "monitoring-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "gatling-influxdb",
+                        "influxdb"
+                    ],
+                    "MacAddress": "5a:39:f8:3f:4c:0a",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+                    "EndpointID": "bee28255fa2e991d34b43a7b193e50a7ba2dca3c9d19fa8ed4a793d0ad96f47c",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.4",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "gatling-influxdb",
+                        "influxdb",
+                        "6103bf3128be"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:323bec748932cf3049bcd0ad3df03da7a85743014f37c5c06390d3dd090d5027",
+            "size": 2306,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:2cb00e789e7be763614c2ec63140b0ad899a29205e331eabcff9d61b04f1e0c4",
+                "org.opencontainers.image.base.name": "alpine:3.17",
+                "org.opencontainers.image.created": "2024-09-06T23:20:58Z",
+                "org.opencontainers.image.revision": "134d39a090aaf8baa7d8993ee503490a6bb88a15",
+                "org.opencontainers.image.source": "https://github.com/influxdata/influxdata-docker.git#134d39a090aaf8baa7d8993ee503490a6bb88a15:influxdb/1.8/alpine",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/influxdb",
+                "org.opencontainers.image.version": "1.8-alpine"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98",
+        "Created": "2025-05-28T06:31:41.772031173Z",
+        "Path": "/bin/mysqld_exporter",
+        "Args": [
+            "--mysqld.username=exporter",
+            "--mysqld.address=hungry_franklin:3306"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 5660,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-05-30T07:55:36.744927723Z",
+            "FinishedAt": "2025-05-28T16:03:12.772282904Z"
+        },
+        "Image": "sha256:20b5b23a98ce3998349042a999e56d22819b46da38fa4e4e9ca0155c975c95d5",
+        "ResolvConfPath": "/var/lib/docker/containers/9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98/hostname",
+        "HostsPath": "/var/lib/docker/containers/9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98/hosts",
+        "LogPath": "/var/lib/docker/containers/9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98/9e88e36089b29baa7466f3f5342b8f8888767da6764355af3392fd9122b82d98-json.log",
+        "Name": "/mysql-exporter-distant",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "monitoring-network",
+            "PortBindings": {
+                "9104/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9104"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "9e88e36089b2",
+            "Domainname": "",
+            "User": "nobody",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "9104/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQLD_EXPORTER_PASSWORD=exporter123",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "--mysqld.username=exporter",
+                "--mysqld.address=hungry_franklin:3306"
+            ],
+            "Image": "prom/mysqld-exporter:latest",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/bin/mysqld_exporter"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "16556d8bba133cdf7bff1eb600cc2250c9d87a263b1d7d64b36f9af5d724d210",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:20b5b23a98ce3998349042a999e56d22819b46da38fa4e4e9ca0155c975c95d5",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "monitoring",
+                "com.docker.compose.project.config_files": "D:\\IT\\gatling\\OrangeHRM\\monitoring\\docker-compose-monitoring-distant.yml",
+                "com.docker.compose.project.working_dir": "D:\\IT\\gatling\\OrangeHRM\\monitoring",
+                "com.docker.compose.service": "mysql-exporter-distant",
+                "com.docker.compose.version": "2.35.1",
+                "maintainer": "The Prometheus Authors \u003cprometheus-developers@googlegroups.com\u003e"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "efa1de821b0c9acd3965cfcfef827e6b6ca78e5b8a83018d166adc566336e61a",
+            "SandboxKey": "/var/run/docker/netns/efa1de821b0c",
+            "Ports": {
+                "9104/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9104"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "monitoring-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "mysql-exporter-distant",
+                        "mysql-exporter-distant"
+                    ],
+                    "MacAddress": "aa:2e:db:af:79:5a",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+                    "EndpointID": "01421c0eb93bea9f5d570d52870833aba361f5fca8cfb0505e46d00c7a43f1b1",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.5",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "mysql-exporter-distant",
+                        "9e88e36089b2"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:8aa1986020c8d84e253482cd519826132b9e887233a6d2b34a8971b0edaabee7",
+            "size": 948,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6",
+        "Created": "2025-05-28T06:31:41.899023632Z",
+        "Path": "/bin/prometheus",
+        "Args": [
+            "--config.file=/etc/prometheus/prometheus.yml",
+            "--storage.tsdb.path=/prometheus"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 5723,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-05-30T07:55:36.938280393Z",
+            "FinishedAt": "2025-05-28T16:03:12.249603659Z"
+        },
+        "Image": "sha256:78ed1f9050eb9eaf766af6e580230b1c4965728650e332cd1ee918c0c4699775",
+        "ResolvConfPath": "/var/lib/docker/containers/d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6/hostname",
+        "HostsPath": "/var/lib/docker/containers/d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6/hosts",
+        "LogPath": "/var/lib/docker/containers/d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6/d434fc1e6d7462a2b12f581304cc506a8cf91c1218746bfcef50ba79e4070ef6-json.log",
+        "Name": "/prometheus-distant",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "D:\\IT\\gatling\\OrangeHRM\\monitoring\\prometheus-distant.yml:/etc/prometheus/prometheus.yml:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "monitoring-network",
+            "PortBindings": {
+                "9090/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9090"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "D:\\IT\\gatling\\OrangeHRM\\monitoring\\prometheus-distant.yml",
+                "Destination": "/etc/prometheus/prometheus.yml",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "3f198b0997c1e89f42d463f035dd74ac15d51ee46f09c92ae8a0adc914464f58",
+                "Source": "/var/lib/docker/volumes/3f198b0997c1e89f42d463f035dd74ac15d51ee46f09c92ae8a0adc914464f58/_data",
+                "Destination": "/prometheus",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "d434fc1e6d74",
+            "Domainname": "",
+            "User": "nobody",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "9090/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "--config.file=/etc/prometheus/prometheus.yml",
+                "--storage.tsdb.path=/prometheus"
+            ],
+            "Image": "prom/prometheus:latest",
+            "Volumes": {
+                "/prometheus": {}
+            },
+            "WorkingDir": "/prometheus",
+            "Entrypoint": [
+                "/bin/prometheus"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "7f82b4fe63509a5e7075d740b14e935ed094f46c2b2ae67b4f6761c32e22c12b",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "mysql-exporter-distant:service_started:false",
+                "com.docker.compose.image": "sha256:78ed1f9050eb9eaf766af6e580230b1c4965728650e332cd1ee918c0c4699775",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "monitoring",
+                "com.docker.compose.project.config_files": "D:\\IT\\gatling\\OrangeHRM\\monitoring\\docker-compose-monitoring-distant.yml",
+                "com.docker.compose.project.working_dir": "D:\\IT\\gatling\\OrangeHRM\\monitoring",
+                "com.docker.compose.service": "prometheus-distant",
+                "com.docker.compose.version": "2.35.1",
+                "maintainer": "The Prometheus Authors \u003cprometheus-developers@googlegroups.com\u003e",
+                "org.opencontainers.image.source": "https://github.com/prometheus/prometheus"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "aa6567ba1a2cfc92669ec9240b596fe4edaeedfd9a8a883012111bd47fe395bd",
+            "SandboxKey": "/var/run/docker/netns/aa6567ba1a2c",
+            "Ports": {
+                "9090/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9090"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "monitoring-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "prometheus-distant",
+                        "prometheus-distant"
+                    ],
+                    "MacAddress": "06:c7:f5:83:74:32",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+                    "EndpointID": "bfbffa8b711007445c7766fbd01a7fb879a430cc0955b5ccfd784cef781f240f",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.6",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "prometheus-distant",
+                        "d434fc1e6d74"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:43670ae74ec8e4e2e55a578102376aac4274857f21b272e3c8a0057f427ed25c",
+            "size": 2406,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad",
+        "Created": "2025-05-28T06:43:00.560352918Z",
+        "Path": "/run.sh",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 5790,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-05-30T07:55:37.180844148Z",
+            "FinishedAt": "2025-05-28T16:03:11.667326737Z"
+        },
+        "Image": "sha256:263cbefd5d9b179893c47c415daab4da5c1f3d6770154741eca4f45c81119884",
+        "ResolvConfPath": "/var/lib/docker/containers/edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad/hostname",
+        "HostsPath": "/var/lib/docker/containers/edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad/hosts",
+        "LogPath": "/var/lib/docker/containers/edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad/edffde196a8d5aef6a8960a5d544a1ad3c43ef9a6e3af166372419af838f59ad-json.log",
+        "Name": "/grafana-monitoring",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "monitoring-network",
+            "PortBindings": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "edffde196a8d",
+            "Domainname": "",
+            "User": "472",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "GF_SECURITY_ADMIN_PASSWORD=admin123",
+                "PATH=/usr/share/grafana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GF_PATHS_CONFIG=/etc/grafana/grafana.ini",
+                "GF_PATHS_DATA=/var/lib/grafana",
+                "GF_PATHS_HOME=/usr/share/grafana",
+                "GF_PATHS_LOGS=/var/log/grafana",
+                "GF_PATHS_PLUGINS=/var/lib/grafana/plugins",
+                "GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+            ],
+            "Cmd": null,
+            "Image": "grafana/grafana:latest",
+            "Volumes": null,
+            "WorkingDir": "/usr/share/grafana",
+            "Entrypoint": [
+                "/run.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "2ddb14377c21328debd32b43ee24dc70f7acebc9f0b158c7e401015070126ecc",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "prometheus-distant:service_started:false",
+                "com.docker.compose.image": "sha256:263cbefd5d9b179893c47c415daab4da5c1f3d6770154741eca4f45c81119884",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "monitoring",
+                "com.docker.compose.project.config_files": "D:\\IT\\gatling\\OrangeHRM\\monitoring\\docker-compose-monitoring-distant.yml",
+                "com.docker.compose.project.working_dir": "D:\\IT\\gatling\\OrangeHRM\\monitoring",
+                "com.docker.compose.service": "grafana",
+                "com.docker.compose.version": "2.35.1",
+                "maintainer": "Grafana Labs \u003chello@grafana.com\u003e",
+                "org.opencontainers.image.source": "https://github.com/grafana/grafana"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "2a42b53105c4c1ab77ef07e9da6f22a9321790ac8c94f5a73a094746230d76ed",
+            "SandboxKey": "/var/run/docker/netns/2a42b53105c4",
+            "Ports": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "monitoring-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "grafana-monitoring",
+                        "grafana"
+                    ],
+                    "MacAddress": "c6:3a:7a:e5:15:0b",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "9a716e2dc54d5f3f0f160cc8f17b52e9abdf6af2d2b7c46551d8c4f2930dd109",
+                    "EndpointID": "f2d067a99d75e0b74521cf021d595d5c92474c6ab528cc27072d1fd36d5ebc57",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.7",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "grafana-monitoring",
+                        "grafana",
+                        "edffde196a8d"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:884f0f140669a5b9dccee1baece011a3fa5dd1951f1ba158b03de8ad1d178380",
+            "size": 2417,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]
+
+C:\Users\geo_m>

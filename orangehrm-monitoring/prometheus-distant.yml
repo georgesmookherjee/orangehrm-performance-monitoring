@@ -15,7 +15,7 @@ scrape_configs:
   # Monitoring MySQL via l'exporter distant
   - job_name: 'mysql-distant'
     static_configs:
-      - targets: ['mysql-exporter-distant:9104']
+      - targets: ['orangehrm-mysql-exporter-distant:9104']
         labels:
           environment: 'test'
           service: 'orangehrm-database'
@@ -23,3 +23,13 @@ scrape_configs:
     scrape_interval: 15s
     metrics_path: /metrics
     scrape_timeout: 10s
+
+  # Monitoring InfluxDB pour Gatling
+  - job_name: 'influxdb-gatling'
+    static_configs:
+      - targets: [ 'orangehrm-gatling-influxdb:8086' ]  # ✅ Nom cohérent
+        labels:
+          environment: 'test'
+          service: 'gatling-metrics'
+    scrape_interval: 30s
+    metrics_path: /metrics

@@ -23,10 +23,10 @@ out/
 **/logback.xml
 
 # Prometheus & Monitoring
-monitoring/data/
-monitoring/logs/
-monitoring/docker-compose.yml
-monitoring/prometheus.yml
+orangehrm-monitoring/data/
+orangehrm-monitoring/logs/
+orangehrm-monitoring/docker-compose.yml
+orangehrm-monitoring/prometheus.yml
 
 # OS
 .DS_Store

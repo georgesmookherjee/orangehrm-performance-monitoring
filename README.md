@@ -47,7 +47,7 @@ Accès aux interfaces :
 - [Scénarios de test](docs/test-scenarios.md)
 - [Configuration monitoring](docs/monitoring-setup.md)
 - [Tests performance](performance-tests/README.md)
-- [Stack monitoring](monitoring/README.md)
+- [Stack monitoring](orangehrm-monitoring/README.md)
 
 ## 🛠️ Prérequis
 
