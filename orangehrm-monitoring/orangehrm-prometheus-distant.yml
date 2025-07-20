@@ -33,3 +33,10 @@ scrape_configs:
           service: 'gatling-metrics'
     scrape_interval: 30s
     metrics_path: /metrics
+
+  - job_name: 'orangehrm-node-exporter'
+    static_configs:
+      - targets: [ 'orangehrm-node-exporter:9100' ]
+    scrape_interval: 10s
+    metrics_path: /metrics
+

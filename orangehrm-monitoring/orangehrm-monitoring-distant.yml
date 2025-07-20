@@ -41,6 +41,30 @@ services:
     depends_on:
       - orangehrm-prometheus-distant
 
+  orangehrm-node-exporter:
+    image: prom/node-exporter:latest
+    container_name: orangehrm-node-exporter
+    restart: unless-stopped
+    ports:
+      - "9100:9100"
+    command:
+      - '--path.rootfs=/host'
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)'
+      # Pas de collector.netdev.device-exclude pour éviter les erreurs
+    volumes:
+      # Version Windows-compatible
+      - '/:/host:ro'
+      # Commenté temporairement si ça pose problème :
+      # - '/proc:/host/proc:ro'
+      # - '/sys:/host/sys:ro'
+    networks:
+      - orangehrm-monitoring-network
+    # Ignorer les erreurs de certains collectors sur Windows
+    environment:
+      - NODE_EXPORTER_DISABLE_COLLECTORS="arp,bcache,bonding,conntrack,edac,entropy,filefd,hwmon,infiniband,ipvs,mdadm,netclass,netstat,nfs,nfsd,sockstat,textfile,time,timex,vmstat,xfs,zfs"
+
 networks:
   orangehrm-monitoring-network:
     external: true
