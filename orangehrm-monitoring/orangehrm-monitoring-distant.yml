@@ -106,6 +106,32 @@ services:
     networks:
       - orangehrm-monitoring-network
 
+#  cadvisor:
+#    image: gcr.io/cadvisor/cadvisor:latest
+#    container_name: orangehrm-cadvisor
+#    restart: unless-stopped
+#    ports:
+#      - "8080:8080"
+#    volumes:
+#      - /:/rootfs:ro
+#      - /var/run:/var/run:ro
+#      - /sys:/sys:ro
+#      - /var/lib/docker/:/var/lib/docker:ro
+#      - /var/run/docker.sock:/var/run/docker.sock:ro
+#      - /dev/disk/:/dev/disk:ro
+#    privileged: true
+#    command:
+#      - '--housekeeping_interval=30s'
+#      - '--max_housekeeping_interval=35s'
+#      - '--event_storage_event_limit=default=0'
+#      - '--event_storage_age_limit=default=0'
+#      - '--disable_metrics=percpu,sched,tcp,udp,accelerator,hugetlb,referenced_memory,cpu_topology,resctrl'
+#      - '--docker_only=true'
+#      - '--store_container_labels=false'
+#      - '--whitelisted_container_labels=name,image'
+#    networks:
+#      - orangehrm-monitoring-network
+
 networks:
   orangehrm-monitoring-network:
     external: true

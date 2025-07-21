@@ -80,7 +80,7 @@ public class OrangeHRMSimulationV4 extends Simulation {
 
     // Scénario avec pace() pour contrôler le rythme
     ScenarioBuilder orangeHRMScenario = scenario("OrangeHRM Mixed Load Test")
-            .during(Duration.ofSeconds(1200)).on(  // Durée totale de 20 minutes
+            .during(Duration.ofSeconds(600)).on(  // Durée totale de 10 minutes
                     pace(Duration.ofSeconds(2))           // Un utilisateur toutes les 2 secondes
                             .exec(parcoursComplet)
             );
@@ -89,7 +89,7 @@ public class OrangeHRMSimulationV4 extends Simulation {
     {
         setUp(
                 orangeHRMScenario.injectOpen(
-                        rampUsers(70).during(Duration.ofSeconds(120))  // 70 utilisateurs sur 2 minutes
+                        rampUsers(80).during(Duration.ofSeconds(120))  // 70 utilisateurs sur 2 minutes
                 ).protocols(httpProtocol)
         );
     }

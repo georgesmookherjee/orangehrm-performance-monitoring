@@ -57,3 +57,7 @@ scrape_configs:
       - target_label: __address__
         replacement: orangehrm-blackbox-exporter:9115
 
+#  - job_name: 'orangehrm-cadvisor'
+#    static_configs:
+#      - targets: [ 'orangehrm-cadvisor:8080' ]
+#
