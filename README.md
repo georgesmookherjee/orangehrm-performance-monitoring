@@ -12,8 +12,9 @@ Suite complète pour les tests de performance et le monitoring de l'application 
 ## 📁 Structure du projet
 
 ```
-├── gatling-maven-plugin-demo-java/     # Tests Gatling Maven
-├── prometheus/           # Stack Prometheus (Grafana reste à implémenter)
+├── orangehrm-Gatling-v1/     # Tests Gatling Maven
+├── orangehrm-Gatling-v2-influxdb/     # Tests Gatling Maven avec monitoring
+├── orangehrm-monitoring/           # Stack Prometheus
 └── docs/                # Documentation
 ```
 
@@ -21,14 +22,15 @@ Suite complète pour les tests de performance et le monitoring de l'application 
 
 ### Tests de performance
 ```bash
-cd gatling-maven-plugin-demo-java
+cd orangehrm-Gatling-v2-influxdb
 mvn gatling:test
 ```
 
 ### Monitoring
 ```bash
-cd prometheus
-docker-compose up -d
+cd orangehrm-monitoring
+orangehrm-monitoring-distant up -d
+orangehrm-gatling-influxdb up -d
 ```
 
 Accès aux interfaces :
