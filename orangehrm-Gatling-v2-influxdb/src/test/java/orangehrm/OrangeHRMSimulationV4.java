@@ -89,7 +89,7 @@ public class OrangeHRMSimulationV4 extends Simulation {
     {
         setUp(
                 orangeHRMScenario.injectOpen(
-                        rampUsers(80).during(Duration.ofSeconds(120))  // 70 utilisateurs sur 2 minutes
+                        rampUsers(35).during(Duration.ofSeconds(120))  // 70 utilisateurs sur 2 minutes
                 ).protocols(httpProtocol)
         );
     }

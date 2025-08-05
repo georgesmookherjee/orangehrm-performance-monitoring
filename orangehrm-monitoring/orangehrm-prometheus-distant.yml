@@ -40,22 +40,22 @@ scrape_configs:
     scrape_interval: 10s
     metrics_path: /metrics
 
-  # Blackbox Exporter - Tests de disponibilité
-  - job_name: 'orangehrm-blackbox'
-    metrics_path: /probe
-    params:
-      module: [ http_2xx ]
-    static_configs:
-      - targets:
-          - http://kind_ardinghelli:80  # Test page d'accueil OrangeHRM
-          - http://kind_ardinghelli:80/web/index.php/auth/login  # Test page login
-    relabel_configs:
-      - source_labels: [ __address__ ]
-        target_label: __param_target
-      - source_labels: [ __param_target ]
-        target_label: instance
-      - target_label: __address__
-        replacement: orangehrm-blackbox-exporter:9115
+#  # Blackbox Exporter - Tests de disponibilité
+#  - job_name: 'orangehrm-blackbox'
+#    metrics_path: /probe
+#    params:
+#      module: [ http_2xx ]
+#    static_configs:
+#      - targets:
+#          - http://kind_ardinghelli:80  # Test page d'accueil OrangeHRM
+#          - http://kind_ardinghelli:80/web/index.php/auth/login  # Test page login
+#    relabel_configs:
+#      - source_labels: [ __address__ ]
+#        target_label: __param_target
+#      - source_labels: [ __param_target ]
+#        target_label: instance
+#      - target_label: __address__
+#        replacement: orangehrm-blackbox-exporter:9115
 
 #  - job_name: 'orangehrm-cadvisor'
 #    static_configs:

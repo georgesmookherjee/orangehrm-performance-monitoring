@@ -54,3 +54,8 @@ old/
 
 # Test data (décommenter si tu ne veux pas versionner les gros CSV)
 # **/*.csv
+/Capture d'écran 2025-07-28 090326.png
+/Capture d'écran 2025-07-28 090343.png
+/résultats des tests capture d'écran docker/
+
+*.config_docker-orangehrm.txt
